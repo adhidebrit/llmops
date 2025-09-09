@@ -1,2 +1,4 @@
 llmops_proj1
 .env
+*.egg-info/
+*.egg
