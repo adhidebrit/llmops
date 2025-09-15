@@ -2,3 +2,14 @@ llmops_proj1
 .env
 *.egg-info/
 *.egg
+
+# Logs
+logs/
+*.log
+
+# Python cache & virtualenv
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
