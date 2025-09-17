@@ -37,7 +37,6 @@ faiss_index/
 *.pkl
 
 # Data & archive
-data/
 archive/
 main_archive/
 *.pdf
