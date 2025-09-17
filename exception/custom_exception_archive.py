@@ -1,7 +1,5 @@
 import sys
 import traceback
-from logger.custom_logger import CustomLogger
-logger = CustomLogger().get_logger()
 class DocumentPortalException(Exception):
     def __init__(self, error_message, error_details):
         _, _, exc_tb = error_details.exc_info()
@@ -23,7 +21,7 @@ if __name__ == "__main__":
         a = 1 / 0  # deliberate error
     except Exception as e:
         app_exc = DocumentPortalException(e, sys)
-        logger.error(app_exc)  # log it to file
+        #logger.error(app_exc)  # log it to file
         raise app_exc  # propagate with full traceback
     # try:
     #     a = int("abc")  # ValueError (inbuilt)
